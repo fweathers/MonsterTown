@@ -13,8 +13,8 @@ class Zombie: Monster {
     
     final override func terrorizeTown() {
         if town?.population > 0 {
-        town?.changePopulation(-10)
-        super.terrorizeTown()
+            town?.changePopulation(-10)
+            super.terrorizeTown()
         } else {
             town?.population = 0
         }
