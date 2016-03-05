@@ -14,14 +14,13 @@ class Zombie: Monster {
     }
     
     var walksWithLimp = true
+    internal private(set) var isFallingApart = false
     
     final override func terrorizeTown() {
-        if town?.population > 0 {
+        if !isFallingApart {
             town?.changePopulation(-10)
-            super.terrorizeTown()
-        } else {
-            town?.population = 0
         }
+        super.terrorizeTown()
     }
     
     func changeName(name: String, walksWithLimp: Bool) {
