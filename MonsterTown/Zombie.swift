@@ -9,6 +9,10 @@
 import Foundation
 
 class Zombie: Monster {
+    override class var spookyNoise: String {
+        return "Brains..."
+    }
+    
     var walksWithLimp = true
     
     final override func terrorizeTown() {

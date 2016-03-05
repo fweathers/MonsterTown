@@ -9,6 +9,9 @@
 import Foundation
 
 class Monster {
+    class var spookyNoise: String {
+        return "Grrr"
+    }
     var town: Town?
     var name = "Monster"
     var victimPool: Int {
