@@ -15,9 +15,13 @@ struct Town {
             //Bronze Challenge
             if (population < oldPopulation) {
                 print("The population has changed to \(population) from \(oldPopulation).")
+                mayor.notifiedOfZombieAttack()
             }
         }
     }
+    
+    var mayor = Mayor()
+
     var numberOfStoplights = 4
     
     enum Size {

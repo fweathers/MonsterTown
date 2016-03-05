@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001D072F1C8B34A3004651B6 /* Mayor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001D072E1C8B34A2004651B6 /* Mayor.swift */; };
 		0085F15D1C6AF70E00BA50D3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085F15C1C6AF70E00BA50D3 /* main.swift */; };
 		0085F1641C6AF97500BA50D3 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085F1631C6AF97500BA50D3 /* Town.swift */; };
 		0085F1661C6AFCDE00BA50D3 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0085F1651C6AFCDE00BA50D3 /* Monster.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		001D072E1C8B34A2004651B6 /* Mayor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mayor.swift; sourceTree = "<group>"; };
 		0085F1591C6AF70E00BA50D3 /* MonsterTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonsterTown; sourceTree = BUILT_PRODUCTS_DIR; };
 		0085F15C1C6AF70E00BA50D3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		0085F1631C6AF97500BA50D3 /* Town.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				0085F1671C6BF92A00BA50D3 /* Zombie.swift */,
 				0085F1651C6AFCDE00BA50D3 /* Monster.swift */,
 				0085F1631C6AF97500BA50D3 /* Town.swift */,
+				001D072E1C8B34A2004651B6 /* Mayor.swift */,
 			);
 			path = MonsterTown;
 			sourceTree = "<group>";
@@ -131,6 +134,7 @@
 				0085F15D1C6AF70E00BA50D3 /* main.swift in Sources */,
 				0085F1681C6BF92A00BA50D3 /* Zombie.swift in Sources */,
 				0085F1661C6AFCDE00BA50D3 /* Monster.swift in Sources */,
+				001D072F1C8B34A3004651B6 /* Mayor.swift in Sources */,
 				0085F1641C6AF97500BA50D3 /* Town.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +255,7 @@
 				0085F1621C6AF70E00BA50D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
