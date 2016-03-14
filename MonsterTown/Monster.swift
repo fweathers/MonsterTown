@@ -33,7 +33,7 @@ class Monster {
         if town != nil && town?.population > 0 {
             print("\(name) is terrorizing a town!")
         } else {
-            print("\(name) hasn't found a town to terrorizex    yet...")
+            print("\(name) hasn't found a town to terrorize yet...")
         }
     }
 }
