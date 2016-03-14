@@ -18,7 +18,7 @@ class Zombie: Monster {
     init(limp: Bool, fallingApart: Bool, town: Town?, monsterName: String){
         walksWithLimp = limp
         isFallingApart = fallingApart
-        super.init(town: town, monsterName: monsterName)
+        super.init(town: town, monsterName: monsterName)!
     }
     
     convenience init(limp: Bool, fallingApart: Bool) {
@@ -26,14 +26,15 @@ class Zombie: Monster {
         print("This zombie has a bad knee.")
     }
 
-//    convenience required init(town: Town?, monsterName: String) {
-//        walksWithLimp = false
-//        isFallingApart = false
-//        super.init(town: town, monsterName: monsterName)
-//    }
     convenience required init(town: Town?, monsterName: String) {
         self.init(limp: false, fallingApart: false, town: town, monsterName: monsterName)
     }
+
+    
+    convenience required init?(town: Town?, monsterName: String?) {
+        self.init(limp: false, fallingApart: false, town: town, monsterName: monsterName!)
+    }
+
     
     final override func terrorizeTown() {
         if !isFallingApart {
